@@ -1,0 +1,44 @@
+
+[
+{
+    "name": "Goa",
+    "lat": 15.29,
+    "log": 74.12
+},
+{
+    "name": "Bangalore",
+    "lat": 12.97,
+    "log": 77.59
+},
+{
+    "name": "Mumbai",
+    "lat": 19.07,
+    "log": 72.87
+},
+{
+    "name": "Patna",
+    "lat": 25.59,
+    "log": 85.13
+},
+{
+    "name": "Imphal",
+    "lat": 24.81,
+    "log": 93.93
+},
+{
+    "name": "Noida",
+    "lat": 28.53,
+    "log": 77.39
+},
+{
+    "name": "Muzaffarpur",
+    "lat": 26.11,
+    "log": 85.39
+},
+{
+    "name": "Kanpur",
+    "lat": 26.44,
+    "log": 80.33
+}
+]
+
