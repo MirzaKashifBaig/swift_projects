@@ -13,10 +13,14 @@
 		81124FAD293AE38100FE02E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81124FAC293AE38100FE02E0 /* Preview Assets.xcassets */; };
 		81124FB4293AE81D00FE02E0 /* Recent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81124FB3293AE81D00FE02E0 /* Recent.swift */; };
 		81124FB6293AE8BF00FE02E0 /* Browse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81124FB5293AE8BF00FE02E0 /* Browse.swift */; };
+		8144BF8F29CEC68A00AA852E /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144BF8E29CEC68A00AA852E /* PDFView.swift */; };
 		81549EA9299FF78E0050E4C5 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81549EA8299FF78E0050E4C5 /* CameraViewController.swift */; };
 		81549EAB29A1FE560050E4C5 /* ScanOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81549EAA29A1FE550050E4C5 /* ScanOptionButton.swift */; };
 		81549EAD29A61DA50050E4C5 /* ScanButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81549EAC29A61DA50050E4C5 /* ScanButtonViewModel.swift */; };
 		81549EB129A628160050E4C5 /* ImportPhotoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81549EB029A628160050E4C5 /* ImportPhotoButton.swift */; };
+		817DEC1F2A7D032C00AA8B72 /* DocumentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817DEC1E2A7D032C00AA8B72 /* DocumentDetails.swift */; };
+		817DEC212A8168D800AA8B72 /* DocumentIconVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817DEC202A8168D800AA8B72 /* DocumentIconVIew.swift */; };
+		81E9D04229EAB66900B55C96 /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E9D04129EAB66900B55C96 /* NavigationItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +32,14 @@
 		81124FAC293AE38100FE02E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		81124FB3293AE81D00FE02E0 /* Recent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recent.swift; sourceTree = "<group>"; };
 		81124FB5293AE8BF00FE02E0 /* Browse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browse.swift; sourceTree = "<group>"; };
+		8144BF8E29CEC68A00AA852E /* PDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
 		81549EA8299FF78E0050E4C5 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		81549EAA29A1FE550050E4C5 /* ScanOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanOptionButton.swift; sourceTree = "<group>"; };
 		81549EAC29A61DA50050E4C5 /* ScanButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanButtonViewModel.swift; sourceTree = "<group>"; };
 		81549EB029A628160050E4C5 /* ImportPhotoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportPhotoButton.swift; sourceTree = "<group>"; };
+		817DEC1E2A7D032C00AA8B72 /* DocumentDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentDetails.swift; sourceTree = "<group>"; };
+		817DEC202A8168D800AA8B72 /* DocumentIconVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentIconVIew.swift; sourceTree = "<group>"; };
+		81E9D04129EAB66900B55C96 /* NavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +94,15 @@
 		81549EB229A629E60050E4C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				81E9D04029EAB65B00B55C96 /* Navigation */,
 				81549EB029A628160050E4C5 /* ImportPhotoButton.swift */,
 				81549EAA29A1FE550050E4C5 /* ScanOptionButton.swift */,
 				81124FA6293AE38100FE02E0 /* ContentView.swift */,
 				81124FB5293AE8BF00FE02E0 /* Browse.swift */,
 				81124FB3293AE81D00FE02E0 /* Recent.swift */,
+				817DEC1E2A7D032C00AA8B72 /* DocumentDetails.swift */,
+				817DEC202A8168D800AA8B72 /* DocumentIconVIew.swift */,
+				8144BF8E29CEC68A00AA852E /* PDFView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -109,6 +121,14 @@
 				81549EAC29A61DA50050E4C5 /* ScanButtonViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		81E9D04029EAB65B00B55C96 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				81E9D04129EAB66900B55C96 /* NavigationItem.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,11 +201,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8144BF8F29CEC68A00AA852E /* PDFView.swift in Sources */,
 				81124FA7293AE38100FE02E0 /* ContentView.swift in Sources */,
 				81549EAD29A61DA50050E4C5 /* ScanButtonViewModel.swift in Sources */,
 				81549EAB29A1FE560050E4C5 /* ScanOptionButton.swift in Sources */,
 				81124FB6293AE8BF00FE02E0 /* Browse.swift in Sources */,
 				81124FB4293AE81D00FE02E0 /* Recent.swift in Sources */,
+				81E9D04229EAB66900B55C96 /* NavigationItem.swift in Sources */,
+				817DEC1F2A7D032C00AA8B72 /* DocumentDetails.swift in Sources */,
+				817DEC212A8168D800AA8B72 /* DocumentIconVIew.swift in Sources */,
 				81124FA5293AE38100FE02E0 /* ScannerApp.swift in Sources */,
 				81549EB129A628160050E4C5 /* ImportPhotoButton.swift in Sources */,
 				81549EA9299FF78E0050E4C5 /* CameraViewController.swift in Sources */,
