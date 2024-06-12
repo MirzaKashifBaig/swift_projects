@@ -11,6 +11,8 @@ struct DocumentDetails: View {
     
     @State private var directories:[URL] = []
     
+    @Binding var searchText: String
+    
     @State private var image: UIImage?
     
     
@@ -23,13 +25,14 @@ struct DocumentDetails: View {
     var body: some View {
         VStack{
             LazyVGrid(columns: columns){
-                ForEach(directories, id: \.self){ directory in
-                    NavigationLink(destination: {
-                        PDFViewWrapper(url: directory)
-                            .navigationTitle(directory.lastPathComponent)
-                    }, label: {
-                        DocumentIconVIew(directory:directory)
-                    })
+                ForEach(directories.filter({searchText.isEmpty ? true : $0.lastPathComponent.localizedStandardContains(searchText)}), id: \.self){ directory in
+//                    NavigationLink(destination: {
+//                        PDFViewWrapper(url: directory)
+//                            .navigationTitle(directory.lastPathComponent)
+//                    }, label: {
+//                        DocumentIconView(directory:directory)
+//                    })
+                    DocumentIconView(directory: directory)
                 }
             }
             .padding()
@@ -55,7 +58,8 @@ struct DocumentDetails: View {
 
 
 struct DocumentDetails_Previews: PreviewProvider {
+    @State static var searchText = ""
     static var previews: some View {
-        DocumentDetails()
+        DocumentDetails(searchText: $searchText)
     }
 }

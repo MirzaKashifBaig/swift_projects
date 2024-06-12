@@ -79,6 +79,7 @@ struct Browse: View {
                             Text("Create Folder")
                         })
                     }
+                    
                 }
                 VStack{
                     Spacer()
@@ -88,6 +89,11 @@ struct Browse: View {
                 
             }
             .navigationTitle("Browse")
+            .toolbar{
+                Button(action: {}, label: {
+                    Image(systemName: "gear")
+                })
+            }
         }
         .onAppear{
             readDirectory()
@@ -95,7 +101,7 @@ struct Browse: View {
         .sheet(isPresented: $scanButtonVM.showImagePicker, content:{
             CameraPickerView(image: $image, isShown: $scanButtonVM.showImagePicker, sourceType: scanButtonVM.sourceType)
         })
-        .searchable(text: $searchText, prompt: "Search in Browse") 
+        .searchable(text: $searchText, prompt: "Search In Browse")
     }
     
     // MARK: Read Directory
